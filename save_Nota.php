@@ -7,25 +7,6 @@ $parcial = $_POST['parcial'];
 $final = $_POST['final'];
 $mejoramiento = $_POST['mejoramiento'];
 
-$total=0;
-if($parcial > $final){
-    if($parcial > $mejoramiento){
-        if($mejoramiento > $final){
-            $total=$mejoramiento+$parcial;
-        }else{
-            $total=$final+$parcial;
-        }
-    
-}
-    }
-echo "". $total;
-$prom = $total/2;
-if($prom >> 60){
-    $aprueba = true;
-}else{
-    $aprueba = false;
-}
-$aprueba =true;
 $NotaCollectorObj = new NotaCollector();
 ?>
 
@@ -37,6 +18,25 @@ $NotaCollectorObj = new NotaCollector();
         <link href="estilo.css" rel="stylesheet">
         <?php
             
+            $total=0;
+            if($parcial > $final){
+                if($parcial > $mejoramiento){
+                    if($mejoramiento > $final){
+                        $total=$mejoramiento+$parcial;
+                    }else{
+                        $total=$final+$parcial;
+                    }
+
+            }
+                }
+            echo "". $total;
+            $prom = $total/2;
+            if($prom >> 60){
+                $aprueba = true;
+            }else{
+                $aprueba = false;
+            }
+            $aprueba =true;
             $NotaCollectorObj->createNota($nombre,$parcial,$final,$mejoramiento,$aprueba);
         echo "<meta HTTP-EQUIV='REFRESH' CONTENT='1;URL=mostrar.php'>";
         ?>

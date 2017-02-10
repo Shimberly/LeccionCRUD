@@ -16,23 +16,23 @@ $NotaCollectorObj = new NotaCollector();
     <div class="container">
                 
                 <form class="form-group" method="post" action="save_Nota.php">
-                    <div class="row form-group">
+                    <div class="row">
                         
-                        <label >Nombre </label>
+                        <label >Nombre &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                         <input type="text" name="nombre" placeholder="Introduce tu nombre">
                     </div>
                     <div class="row">
-                        <label>Parcial</label>
+                        <label>Parcial &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                         <input type="text" name="parcial" placeholder="Introduce tu nota del parcial">
                     </div>
                     
                     <div class="row">
-                        <label>Final</label>
+                        <label>Final&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                         <input type="text" name="final" placeholder="Introduce tu nota del final">
                     </div>
                     
                     <div class="row">
-                        <label>Mejoramiento</label>
+                        <label>Mejoramiento&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                         <input type="text" name="mejoramiento" placeholder="Introduce tu nota del mejoramiento">
                     </div>
                     
